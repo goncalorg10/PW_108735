@@ -7,107 +7,182 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Lista completa de golos de Vinicius Jr. pelo Real Madrid e pela Seleção Brasileira.">
-    <title>Golos de Vini Jr.</title>
+    <title>Golos de Vini Jr. — Arquivo</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <h1>VINI JR</h1>
+
+    <!-- ── NAV ────────────────────────────────────────── -->
+    <header class="nav" id="nav">
+        <a href="index.html" class="nav__logo">VINI <span>JR</span></a>
         <nav>
-            <ul>
-                <li><a href="index.html">INÍCIO</a></li>
-                <li><a href="golos.html">GOLOS</a></li>
-                <li><a href="dribles.html">DRIBLES</a></li>
+            <ul class="nav__links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="golos.html" class="active">Golos</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Golos pelo Real Madrid — Época <time datetime="2024">2023/24</time></h2>
-            <table border="1">
-                <caption>Golos marcados na época 2023/24</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Data</th>
-                        <th scope="col">Adversário</th>
-                        <th scope="col">Competição</th>
-                        <th scope="col">Minuto</th>
-                        <th scope="col">Resultado</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td><time datetime="2024-06-01">1 Jun 2024</time></td>
-                        <td>Borussia Dortmund</td>
-                        <td><abbr title="Liga dos Campeões da UEFA">UCL</abbr> Final</td>
-                        <td>83'</td>
-                        <td>Real Madrid 2&ndash;0 Dortmund</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td><time datetime="2024-04-09">9 Abr 2024</time></td>
-                        <td>Manchester City</td>
-                        <td><abbr title="Liga dos Campeões da UEFA">UCL</abbr> Quartos</td>
-                        <td>12'</td>
-                        <td>Real Madrid 3&ndash;3 Man. City</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><time datetime="2024-03-10">10 Mar 2024</time></td>
-                        <td>RB Leipzig</td>
-                        <td><abbr title="Liga dos Campeões da UEFA">UCL</abbr> Oitavos</td>
-                        <td>25'</td>
-                        <td>Real Madrid 1&ndash;0 Leipzig</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="6"><strong>Total: 24 golos na época 2023/24</strong></td>
-                    </tr>
-                </tfoot>
-            </table>
+
+        <!-- ── PAGE HERO ──────────────────────────────── -->
+        <section class="hero" style="height:55svh; min-height:380px;" aria-label="Arquivo de golos">
+            <div class="hero__bg" role="img" aria-label="Background cinematográfico"></div>
+            <div class="hero__content" style="animation: fadeUp 1s ease both;">
+                <p class="hero__eyebrow">Arquivo</p>
+                <h1 class="hero__title" style="font-size: clamp(3rem, 9vw, 7rem);">Os <em>Golos</em></h1>
+                <p class="hero__sub">Momentos que ficam para sempre na memória do futebol.</p>
+            </div>
         </section>
 
-        <section>
-            <h2>Golos históricos</h2>
-            <p>Alguns dos golos mais memoráveis de Vini Jr. ao longo da carreira:</p>
-            <ol>
+        <!-- ── GOALS TABLE ────────────────────────────── -->
+        <section class="section" id="golos-tabela">
+            <div class="section__header reveal">
+                <div>
+                    <p class="section__eyebrow">Estatísticas</p>
+                    <h2 class="section__title">Golos pelo<br><em>Real Madrid 2023/24</em></h2>
+                    <div class="section__rule"></div>
+                </div>
+                <span class="tag">Época 2023/24</span>
+            </div>
+
+            <div class="reveal reveal--d1" style="overflow-x:auto;">
+                <table class="goals-table">
+                    <caption>Golos marcados na época 2023/24</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Data</th>
+                            <th scope="col">Adversário</th>
+                            <th scope="col">Competição</th>
+                            <th scope="col">Minuto</th>
+                            <th scope="col">Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="goal-nr">1</span></td>
+                            <td><time datetime="2024-06-01">1 Jun 2024</time></td>
+                            <td>Borussia Dortmund</td>
+                            <td><abbr title="Liga dos Campeões da UEFA">UCL</abbr> Final</td>
+                            <td>83'</td>
+                            <td>Real Madrid 2&ndash;0 Dortmund</td>
+                        </tr>
+                        <tr>
+                            <td><span class="goal-nr">2</span></td>
+                            <td><time datetime="2024-04-09">9 Abr 2024</time></td>
+                            <td>Manchester City</td>
+                            <td><abbr title="Liga dos Campeões da UEFA">UCL</abbr> Quartos</td>
+                            <td>12'</td>
+                            <td>Real Madrid 3&ndash;3 Man. City</td>
+                        </tr>
+                        <tr>
+                            <td><span class="goal-nr">3</span></td>
+                            <td><time datetime="2024-03-10">10 Mar 2024</time></td>
+                            <td>RB Leipzig</td>
+                            <td><abbr title="Liga dos Campeões da UEFA">UCL</abbr> Oitavos</td>
+                            <td>25'</td>
+                            <td>Real Madrid 1&ndash;0 Leipzig</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="6"><strong>Total: 24 golos na época 2023/24</strong></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+
+        <!-- ── HISTORIC GOALS ──────────────────────────── -->
+        <section class="section section--alt" id="golos-historicos">
+            <div class="section__header reveal">
+                <div>
+                    <p class="section__eyebrow">Legado</p>
+                    <h2 class="section__title">Golos<br><em>Históricos</em></h2>
+                    <div class="section__rule"></div>
+                </div>
+            </div>
+
+            <p class="reveal reveal--d1"
+                style="color:var(--clr-muted); font-size:0.88rem; margin-bottom:2.5rem; max-width:55ch; line-height:2;">
+                Alguns dos momentos mais memoráveis de Vini Jr. ao longo da carreira:
+            </p>
+
+            <ol class="historic-list reveal reveal--d2">
                 <li>
                     <details>
-                        <summary><strong>Final da <abbr title="Liga dos Campeões">UCL</abbr> 2022</strong> — vs.
-                            Liverpool</summary>
-                        <p>Golo solitário que deu o título europeu ao Real Madrid. Remate cruzado ao segundo poste no
-                            minuto <time datetime="PT59M">59'</time>.</p>
+                        <summary>
+                            <strong>Final da <abbr title="Liga dos Campeões">UCL</abbr> 2022</strong>
+                            <span style="font-size:0.7rem;color:var(--clr-muted);letter-spacing:.1em;">vs.
+                                Liverpool</span>
+                        </summary>
+                        <div class="detail-body">
+                            Golo solitário que deu o título europeu ao Real Madrid. Remate cruzado ao segundo
+                            poste no minuto <time datetime="PT59M">59'</time>. Um golo que o imortalizou.
+                        </div>
                     </details>
                 </li>
                 <li>
                     <details>
-                        <summary><strong>Final da <abbr title="Liga dos Campeões">UCL</abbr> 2024</strong> — vs.
-                            Borussia Dortmund</summary>
-                        <p>Golo de cabeça no minuto <time datetime="PT83M">83'</time> que selou o segundo título europeu
-                            consecutivo.</p>
+                        <summary>
+                            <strong>Final da <abbr title="Liga dos Campeões">UCL</abbr> 2024</strong>
+                            <span style="font-size:0.7rem;color:var(--clr-muted);letter-spacing:.1em;">vs. Borussia
+                                Dortmund</span>
+                        </summary>
+                        <div class="detail-body">
+                            Golo de cabeça no minuto <time datetime="PT83M">83'</time> que selou o segundo
+                            título europeu consecutivo. A confirmação de uma geração dourada.
+                        </div>
                     </details>
                 </li>
                 <li>
                     <details>
-                        <summary><strong>El Clásico, <time datetime="2023-10-28">out. 2023</time></strong> — vs. FC
-                            Barcelona</summary>
-                        <p>Drible e finalização de marca maior no clássico espanhol, contribuindo para a vitória do Real
-                            Madrid.</p>
+                        <summary>
+                            <strong>El Clásico <time datetime="2023-10">Out. 2023</time></strong>
+                            <span style="font-size:0.7rem;color:var(--clr-muted);letter-spacing:.1em;">vs. FC
+                                Barcelona</span>
+                        </summary>
+                        <div class="detail-body">
+                            Drible e finalização de marca maior no clássico espanhol. Um golo que deixou o
+                            Camp Nou em silêncio e o mundo a aplaudir.
+                        </div>
                     </details>
                 </li>
             </ol>
         </section>
+
     </main>
 
-    <footer>
-        <hr>
-        <p>Site dedicado a Vini Jr. &mdash; Criado por Gonçalo &copy; <time datetime="2026">2026</time></p>
+    <!-- ── FOOTER ──────────────────────────────────────── -->
+    <footer class="footer">
+        <div class="footer__logo">Vini <span style="color:var(--clr-gold)">Jr.</span></div>
+        <p class="footer__copy">
+            Criado por <span>Gonçalo</span> &copy; <time datetime="2026">2026</time>
+        </p>
     </footer>
+
+    <!-- ── SCRIPTS ─────────────────────────────────────── -->
+    <script>
+        // Nav scroll effect
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 40);
+        }, { passive: true });
+
+        // Reveal on scroll
+        const reveals = document.querySelectorAll('.reveal');
+        const io = new IntersectionObserver(
+            (entries) => entries.forEach(e => {
+                if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+            }),
+            { threshold: 0.12 }
+        );
+        reveals.forEach(el => io.observe(el));
+    </script>
+
 </body>
 
 </html>

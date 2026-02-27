@@ -8,86 +8,183 @@
     <meta name="description"
         content="Site dedicado a Vinicius Jr., o melhor jogador do mundo. Golos, dribles e muito mais.">
     <title>Vini Jr. — O Melhor do Mundo</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <h1>VINI JR</h1>
+
+    <!-- ── NAV ────────────────────────────────────────── -->
+    <header class="nav" id="nav">
+        <a href="index.html" class="nav__logo">VINI <span>JR</span></a>
         <nav>
-            <ul>
-                <li><a href="index.html">INÍCIO</a></li>
-                <li><a href="golos.html">GOLOS</a></li>
-                <li><a href="dribles.html">DRIBLES</a></li>
+            <ul class="nav__links">
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="golos.html">Golos</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>O Melhor Jogador do Mundo</h2>
-            <p>
-                <strong>Vinicius José Paixão de Oliveira Júnior</strong>, conhecido como <abbr
-                    title="Vinicius Junior">Vini Jr.</abbr>,
-                nasceu a <time datetime="2000-07-12">12 de julho de 2000</time> no Brasil.
-                É extremo esquerdo do <strong>Real Madrid</strong> e da <strong>Seleção Brasileira</strong>.
-            </p>
-            <p>
-                Considerado um dos melhores jogadores do mundo, Vini Jr. é reconhecido pela sua
-                <em>velocidade</em>, <em>criatividade</em> e <em>capacidade de drible</em>.
-            </p>
+
+        <!-- ── HERO ───────────────────────────────────── -->
+        <section class="hero" aria-label="Secção principal">
+            <div class="hero__bg" role="img" aria-label="Fotografia cinematográfica de Vini Jr."></div>
+            <div class="hero__content">
+                <p class="hero__eyebrow">Real Madrid · Seleção Brasileira</p>
+                <h1 class="hero__title">VINI<br><em>JR.</em></h1>
+                <p class="hero__sub">Velocidade. Criatividade. Genialidade.<br>O número 7 que redefine o jogo.</p>
+                <a href="#bio" class="hero__scroll" aria-label="Rolar para baixo">
+                    <span>Explorar</span>
+                    <div class="scroll-line"></div>
+                </a>
+            </div>
         </section>
 
-        <section>
-            <h2>Conquistas</h2>
-            <ul>
-                <li>🏆 <strong>Liga dos Campeões</strong> — <time datetime="2022">2021/22</time>, <time
-                        datetime="2024">2023/24</time></li>
-                <li>🏆 <strong>La Liga</strong> — <time datetime="2022">2021/22</time>, <time
-                        datetime="2024">2023/24</time></li>
-                <li>🥇 <strong>Copa América</strong> — <time datetime="2022">2022</time></li>
-                <li>⭐ <strong>Finalista do Bola de Ouro</strong> — <time datetime="2024">2024</time></li>
-            </ul>
+        <!-- ── STAT BAR ────────────────────────────────── -->
+        <div class="stat-bar" role="region" aria-label="Estatísticas">
+            <div class="stat-bar__item reveal">
+                <div class="stat-bar__num">24</div>
+                <div class="stat-bar__label">Golos 2023/24</div>
+            </div>
+            <div class="stat-bar__item reveal reveal--d1">
+                <div class="stat-bar__num">2×</div>
+                <div class="stat-bar__label">UCL Champion</div>
+            </div>
+            <div class="stat-bar__item reveal reveal--d2">
+                <div class="stat-bar__num">7</div>
+                <div class="stat-bar__label">Número Lendário</div>
+            </div>
+        </div>
+
+        <!-- ── BIO ─────────────────────────────────────── -->
+        <section class="section" id="bio">
+            <div class="section__header reveal">
+                <div>
+                    <p class="section__eyebrow">Perfil</p>
+                    <h2 class="section__title">O Melhor<br><em>Jogador do Mundo</em></h2>
+                    <div class="section__rule"></div>
+                </div>
+                <span class="tag">Nascido 12 Jul 2000</span>
+            </div>
+
+            <div class="bio">
+                <div class="bio__text reveal reveal--d1">
+                    <p>
+                        <strong>Vinicius José Paixão de Oliveira Júnior</strong>, conhecido como
+                        <abbr title="Vinicius Junior">Vini Jr.</abbr>,
+                        nasceu a <time datetime="2000-07-12">12 de julho de 2000</time> no Brasil.
+                        É extremo esquerdo do <strong>Real Madrid</strong> e da <strong>Seleção Brasileira</strong>.
+                    </p>
+                    <p>
+                        Considerado um dos melhores jogadores do mundo, Vini Jr. é reconhecido pela sua
+                        <em>velocidade</em>, <em>criatividade</em> e <em>capacidade de drible</em>.
+                        Com apenas 24 anos, já reescreveu a história do futebol europeu.
+                    </p>
+                </div>
+
+                <!-- Ficha do Jogador -->
+                <div class="reveal reveal--d2">
+                    <table class="player-card">
+                        <caption>Ficha do Jogador</caption>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Nome completo</th>
+                                <td>Vinicius José Paixão de Oliveira Júnior</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Data de nascimento</th>
+                                <td><time datetime="2000-07-12">12 de julho de 2000</time></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Nacionalidade</th>
+                                <td>🇧🇷 Brasileira</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Clube</th>
+                                <td>Real Madrid <abbr title="Clube de Futebol">CF</abbr></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Posição</th>
+                                <td>Extremo Esquerdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Número</th>
+                                <td>7</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Dados Pessoais</h2>
-            <table border="1">
-                <caption>Ficha do Jogador</caption>
-                <tbody>
-                    <tr>
-                        <th scope="row">Nome completo</th>
-                        <td>Vinicius José Paixão de Oliveira Júnior</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Data de nascimento</th>
-                        <td><time datetime="2000-07-12">12 de julho de 2000</time></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Nacionalidade</th>
-                        <td>🇧🇷 Brasileira</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Clube</th>
-                        <td>Real Madrid <abbr title="Clube de Futebol">CF</abbr></td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Posição</th>
-                        <td>Extremo Esquerdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Número</th>
-                        <td>7</td>
-                    </tr>
-                </tbody>
-            </table>
+        <!-- ── CONQUISTAS ──────────────────────────────── -->
+        <section class="section section--alt" id="conquistas">
+            <div class="section__header reveal">
+                <div>
+                    <p class="section__eyebrow">Palmarés</p>
+                    <h2 class="section__title">Conquistas<br><em>& Títulos</em></h2>
+                    <div class="section__rule"></div>
+                </div>
+            </div>
+
+            <div class="trophies">
+                <div class="trophy-item reveal">
+                    <div class="trophy-item__icon">🏆</div>
+                    <div class="trophy-item__title">Liga dos Campeões</div>
+                    <div class="trophy-item__year">
+                        <time datetime="2022">2021/22</time> · <time datetime="2024">2023/24</time>
+                    </div>
+                </div>
+                <div class="trophy-item reveal reveal--d1">
+                    <div class="trophy-item__icon">🏆</div>
+                    <div class="trophy-item__title">La Liga</div>
+                    <div class="trophy-item__year">
+                        <time datetime="2022">2021/22</time> · <time datetime="2024">2023/24</time>
+                    </div>
+                </div>
+                <div class="trophy-item reveal reveal--d2">
+                    <div class="trophy-item__icon">🥇</div>
+                    <div class="trophy-item__title">Copa América</div>
+                    <div class="trophy-item__year"><time datetime="2022">2022</time></div>
+                </div>
+                <div class="trophy-item reveal reveal--d3">
+                    <div class="trophy-item__icon">⭐</div>
+                    <div class="trophy-item__title">Bola de Ouro</div>
+                    <div class="trophy-item__year">Finalista <time datetime="2024">2024</time></div>
+                </div>
+            </div>
         </section>
+
     </main>
 
-    <footer>
-        <hr>
-        <p>Site dedicado a Vini Jr. &mdash; Criado por Gonçalo &copy; <time datetime="2026">2026</time></p>
+    <!-- ── FOOTER ──────────────────────────────────────── -->
+    <footer class="footer">
+        <div class="footer__logo">Vini <span style="color:var(--clr-gold)">Jr.</span></div>
+        <p class="footer__copy">
+            Criado por <span>Gonçalo</span> &copy; <time datetime="2026">2026</time>
+        </p>
     </footer>
+
+    <!-- ── SCRIPTS ─────────────────────────────────────── -->
+    <script>
+        // Nav scroll effect
+        const nav = document.getElementById('nav');
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 40);
+        }, { passive: true });
+
+        // Reveal on scroll
+        const reveals = document.querySelectorAll('.reveal');
+        const io = new IntersectionObserver(
+            (entries) => entries.forEach(e => {
+                if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+            }),
+            { threshold: 0.12 }
+        );
+        reveals.forEach(el => io.observe(el));
+    </script>
+
 </body>
 
 </html>
